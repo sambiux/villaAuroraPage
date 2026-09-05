@@ -1,0 +1,16 @@
+.menu-tabs {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+.menu-tab {
+  background: transparent;
+  border: 1.5px solid var(--wood);
+  color: var(--wood);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.menu-tab.is-active { background: var(--wood); color: var(--cream); }

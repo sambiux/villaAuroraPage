@@ -1,0 +1,17 @@
+/* Una sola secuencia orquestada de entrada, no fade-up en cada card */
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+}
+.reveal.is-visible {
+  animation: revealUp 0.7s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; animation: none !important; }
+  * { scroll-behavior: auto !important; }
+}

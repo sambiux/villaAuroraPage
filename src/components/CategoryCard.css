@@ -1,0 +1,9 @@
+.category-card {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: var(--space-sm);
+  text-align: left;
+}
+.category-card__img { height: 200px; margin-bottom: var(--space-sm); }
+.category-card h3 { margin-bottom: 0.4rem; font-size: 1.3rem; }
+.category-card p { color: var(--wood); margin-bottom: var(--space-sm); font-size: 0.95rem; }

@@ -1,0 +1,15 @@
+.food-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(107,66,38,0.1);
+  display: flex;
+  flex-direction: column;
+}
+.food-card__img { height: 190px; }
+.food-card__body { padding: var(--space-sm) 1.2rem 1.4rem; }
+.food-card__body h3 { font-size: 1.25rem; margin-bottom: 0.3rem; }
+.food-card__body p { color: var(--wood); font-size: 0.92rem; margin-bottom: 0.9rem; }
+.food-card__footer { display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; flex-wrap: wrap; }
+.food-card__price { font-family: var(--font-display); font-weight: 700; color: var(--teal-deep); font-size: 1.15rem; }
+.food-card__btn { padding: 0.5rem 1rem; font-size: 0.8rem; }

@@ -1,0 +1,91 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--teal-deep-dark);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+button { font-family: var(--font-body); cursor: pointer; border: none; }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: var(--space-xs);
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  color: var(--wood);
+  font-size: 1.05rem;
+  max-width: 640px;
+  margin-bottom: var(--space-lg);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary {
+  background: var(--teal-deep);
+  color: var(--cream);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11,74,74,0.3); }
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid var(--teal-deep);
+  color: var(--teal-deep);
+}
+.btn-outline:hover { background: var(--teal-deep); color: var(--cream); }
+
+.btn-violet {
+  background: var(--violet);
+  color: var(--cream);
+}
+.btn-violet:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(91,58,122,0.35); }
+
+.placeholder-img {
+  background: repeating-linear-gradient(135deg, var(--cream-dark), var(--cream-dark) 10px, #ddd0b0 10px, #ddd0b0 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--wood);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  padding: var(--space-sm);
+  border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+  .section { padding: var(--space-lg) 0; }
+}
