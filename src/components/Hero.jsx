@@ -1,5 +1,6 @@
 import Button from './Button.jsx'
 import './Hero.css'
+import imgPrincipalSalon from "../assets/imgPrincipal.jpeg";
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
         </div>
         <div className="hero__media">
           <div className="hero__frame placeholder-img">
-            Imagen placeholder — foto del restaurante o de una picada
+            <img src={imgPrincipalSalon} alt="imgSalon" />
           </div>
         </div>
       </div>

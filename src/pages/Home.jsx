@@ -5,6 +5,10 @@ import FoodCard from '../components/FoodCard.jsx'
 import ImageCarousel from '../components/ImageCarousel.jsx'
 import Button from '../components/Button.jsx'
 import useScrollAnimation from '../hooks/useScrollAnimation.js'
+import imgFamilia from "../assets/imgFamilia.jpeg";
+import imgPicada from "../assets/imgPicada.jpeg";
+import imgSalon from "../assets/imgSalon.jpeg";
+import imgCanto from "../assets/imgCanto.png";
 import { categorias, picadas } from '../data/menu.js'
 import './Home.css'
 
@@ -73,7 +77,7 @@ export default function Home() {
       <section className="section container">
         <Reveal>
           <SectionTitle title="Momentos en Villa Aurora" />
-          <ImageCarousel slides={['Foto del salón', 'Foto de una picada', 'Foto de un show musical', 'Foto en familia']} />
+          <ImageCarousel slides={[imgSalon, imgPicada, imgCanto, imgFamilia]} />
         </Reveal>
       </section>
 

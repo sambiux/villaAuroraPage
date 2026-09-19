@@ -1,8 +1,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import './ImageCarousel.css'
 
-// Recibe un array de strings (nombres/labels de placeholder).
-// Al reemplazar por fotos reales, pasar { src, alt } en vez de solo label.
+
 export default function ImageCarousel({ slides = [] }) {
   const [index, setIndex] = useState(0)
 
@@ -19,9 +18,9 @@ export default function ImageCarousel({ slides = [] }) {
   return (
     <div className="carousel">
       <div className="carousel__track" style={{ transform: `translateX(-${index * 100}%)` }}>
-        {slides.map((label, i) => (
+        {slides.map((img, i) => (
           <div key={i} className="carousel__slide placeholder-img">
-            {label}
+            <img src={img} alt="" />
           </div>
         ))}
       </div>
